@@ -1,11 +1,12 @@
 // Nicolaas Johan Jansen van Rensburg - u22590732
 
 import React from 'react';
-// import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import { Playlist } from './pages/Playlist';
 import { Profile } from './pages/Profile';
 import { Splash } from './pages/Splash';
+import {NewPlaylistPage} from './pages/NewPlaylistPage';
 
 const data = [
   {
@@ -138,7 +139,14 @@ const data = [
 class App extends React.Component {
   render() {
     return (
-        <Splash/>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Splash />} />
+            <Route path="/Playlist" element={<Playlist title="Playlist 1" playlist={data[0].playlists[0]} />} />
+            <Route path="/Profile" element={<Profile username={data[0].username} email={data[0].email} playlists={data[0].playlists} friends={data[0].friends} />} />
+            <Route path="/NewPlaylistPage" element={<NewPlaylistPage/>}/>
+          </Routes>
+        </BrowserRouter>
     );
   }
 }

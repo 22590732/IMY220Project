@@ -6,23 +6,18 @@ import { Navbar } from '../components/Navbar';
 import {Searchbar} from '../components/Searchbar';
 import { Comments } from '../components/Comments';
 import { addComment } from '../components/AddComment';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class Playlist extends React.Component {
     constructor(props) {
         super(props);
-        this.navigate = useNavigate();
-    }
-
-    gotoProfile() {
-        navigate('./Profile');
     }
 
     render() {
         return (
             <div>
                 <h2>{this.props.title}</h2>
-                <button onClick={this.gotoProfile}>Profile</button>
+                <Link to="/Profile">Profile</Link>
                 <Navbar playlist={this.props.playlist}/>
                 <Searchbar/>
                 <SongsInPlaylist songs={this.props.playlist.songs}/>

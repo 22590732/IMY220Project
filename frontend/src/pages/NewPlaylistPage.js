@@ -31,4 +31,4 @@ class NewPlaylistPage extends React.Component {
     }
 };
 
-export {PlaNewPlaylistPageylist};
+export {NewPlaylistPage};

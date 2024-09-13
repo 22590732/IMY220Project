@@ -1,14 +1,18 @@
 // Nicolaas Johan Jansen van Rensburg - u22590732
 
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+
+const router = createBrowserRouter();
 
 class Login extends React.Component {
     constructor(props) {
         super(props);
+        this.state = {
+            loggedIn: false
+        }
         this.signup = this.signup.bind(this);
         this.submitLogin = this.submitLogin.bind(this);
-        this.navigate = useNavigate();
     }
 
     submitLogin(event) {
@@ -21,7 +25,7 @@ class Login extends React.Component {
             return;
         }
 
-        navigate('./Playlist');
+        this.setState({loggedIn: true});
     }
 
     signup() {
@@ -29,6 +33,11 @@ class Login extends React.Component {
     }
 
     render() {
+        if (this.state.loggedIn) {
+            return (
+                <Link to="/Playlist"/>
+            );
+        }
         return (
             <div>
                 <form className="login" onSubmit={this.submitLogin}>
@@ -37,7 +46,7 @@ class Login extends React.Component {
 
                     <p>Not registered? Sign Up</p>
                     <button onClick={this.signup}>Sign up</button>
-                    <button type="submit">search</button>
+                    <button type="submit">Login</button>
                 </form>
             </div>
         );
