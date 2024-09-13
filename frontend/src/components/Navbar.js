@@ -9,21 +9,21 @@ class Navbar extends React.Component {
     }
 
     render() {
+        console.log("Called Navbar");
+        console.log({props:this.props});
         return (
             <nav>
                 <BrowserRouter>
                     <div id="actionList">
                         <Routes>
-                            <Route path="/addSong" element={<AddSong />} /> // Fill in the correct nav here
-                            <Route path="/profile" element={<ProfilePreview />} />
+                            {/* <Route path="/addSong" element={<AddSong />} /> // Fill in the correct nav here
+                            <Route path="/profile" element={<ProfilePreview />} /> */}
                         </Routes>
                     </div>
 
                     <div id="playlists">
                         <Routes>
-                            {this.props.playlists.map((playlist) => {
-                                <Route/>
-                            })}
+                                
                         </Routes>
                     </div>
                 </BrowserRouter>

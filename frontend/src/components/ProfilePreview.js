@@ -14,8 +14,8 @@ class ProfilePreview extends React.Component {
                 <img></img>
                 <h2>{this.props.username}</h2>
                 <h3>Most played PLaylists</h3>
-                {this.props.playlists.map((playlist) => {
-                    return <p>{<PlaylistPreview title={playlist.title} artists={playlist.artists}/>}</p>
+                {this.props.playlists.map((playlist, index) => {
+                    return(<PlaylistPreview key={index} title={playlist.title} artists={playlist.artists}/>);
                 })}
             </div>
         );

@@ -11,8 +11,8 @@ class SongsInPlaylist extends React.Component {
         return (
             <div>
                 <ul>
-                    {this.props.songs.map((song) => {
-                        return <p>{song.title}</p>
+                    {this.props.songs.map((song, index) => {
+                        return <p key={index}>{song.title}</p>
                     })}
                 </ul>
                 

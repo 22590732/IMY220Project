@@ -8,7 +8,7 @@ import { Comments } from '../components/Comments';
 import { addComment } from '../components/AddComment';
 import { useNavigate } from 'react-router-dom';
 
-class Playlist extends React.Component {
+class SearchPage extends React.Component {
     constructor(props) {
         super(props);
         this.navigate = useNavigate();
@@ -25,12 +25,9 @@ class Playlist extends React.Component {
                 <button onClick={this.gotoProfile}>Profile</button>
                 <Navbar playlist={this.props.playlist}/>
                 <Searchbar/>
-                <SongsInPlaylist songs={this.props.playlist.songs}/>
-                <Comments comments={this.props.playlist.comments}/>
-                <addComment/>
             </div>
         );
     }
 };
 
-export {Playlist};
+export {SearchPage};

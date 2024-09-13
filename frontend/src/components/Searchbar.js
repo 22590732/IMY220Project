@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-class Song extends React.Component {
+class Searchbar extends React.Component {
     constructor(props) {
         super(props);
     }
@@ -24,4 +24,4 @@ class Song extends React.Component {
     }
 };
 
-export {Song};
+export {Searchbar};

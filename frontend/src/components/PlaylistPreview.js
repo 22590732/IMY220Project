@@ -12,7 +12,7 @@ class PlaylistPreview extends React.Component {
             <div>
                 <img></img>
                 <h2>{this.props.title}</h2>
-                <p>{...this.props.artists}</p>
+                <p>{this.props.artists}</p>
             </div>
         );
     }
