@@ -141,7 +141,7 @@ class App extends React.Component {
     return (
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Splash />} />
+            <Route path="/" element={<Splash data={data[0]}/>} />
             <Route path="/Playlist" element={<Playlist title="Playlist 1" playlist={data[0].playlists[0]} />} />
             <Route path="/Profile" element={<Profile username={data[0].username} email={data[0].email} playlists={data[0].playlists} friends={data[0].friends} />} />
             <Route path="/NewPlaylistPage" element={<NewPlaylistPage/>}/>

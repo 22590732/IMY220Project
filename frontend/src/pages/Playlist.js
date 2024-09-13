@@ -16,7 +16,7 @@ class Playlist extends React.Component {
     render() {
         return (
             <div>
-                <h2>{this.props.title}</h2>
+                <h2>SonicGlow</h2>
                 <Link to="/Profile">Profile</Link>
                 <Navbar playlist={this.props.playlist}/>
                 <Searchbar/>

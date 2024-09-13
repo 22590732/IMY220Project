@@ -1,9 +1,8 @@
 // Nicolaas Johan Jansen van Rensburg - u22590732
 
 import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
-const router = createBrowserRouter();
 
 class Login extends React.Component {
     constructor(props) {
@@ -35,7 +34,7 @@ class Login extends React.Component {
     render() {
         if (this.state.loggedIn) {
             return (
-                <Link to="/Playlist"/>
+                <Link to="/Playlist" playlists={this.props.data.playlists} songs={this.props.data.songs} comments={this.props.data.comments}/>
             );
         }
         return (

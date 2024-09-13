@@ -20,7 +20,7 @@ class Splash extends React.Component {
     render() {
         return (
             <div>
-                {this.state.loggingIn ? <Login toggleLoggingIn={this.toggleLoggingIn}/> : <Signup toggleLoggingIn={this.toggleLoggingIn}/>}
+                {this.state.loggingIn ? <Login toggleLoggingIn={this.toggleLoggingIn} data={this.props.data}/> : <Signup toggleLoggingIn={this.toggleLoggingIn}/>}
             </div>
         );
     }
