@@ -7,6 +7,7 @@ import { Playlist } from './pages/Playlist';
 import { Profile } from './pages/Profile';
 import { Splash } from './pages/Splash';
 import {NewPlaylistPage} from './pages/NewPlaylistPage';
+import {getUserById} from '../../backend/api';
 
 const data = [
   {
@@ -138,15 +139,20 @@ const data = [
 
 class App extends React.Component {
   render() {
+
+    // const data = getUserById(1);
+
     return (
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Splash data={data[0]}/>} />
-            <Route path="/Playlist" element={<Playlist title="Playlist 1" playlist={data[0].playlists[0]} />} />
-            <Route path="/Profile" element={<Profile username={data[0].username} email={data[0].email} playlists={data[0].playlists} friends={data[0].friends} />} />
-            <Route path="/NewPlaylistPage" element={<NewPlaylistPage/>}/>
-          </Routes>
-        </BrowserRouter>
+      <h1>Hello World</h1>
+        // <Profile username={data[0].username} email={data[0].email} playlists={data[0].playlists} friends={data[0].friends} />
+        // <BrowserRouter>
+        //   <Routes>
+        //     <Route path="/" element={<Splash data={data[0]}/>} />
+        //     <Route path="/Playlist" element={<Playlist title="Playlist 1" playlist={data[0].playlists[0]} />} />
+        //     <Route path="/Profile" element={<Profile username={data[0].username} email={data[0].email} playlists={data[0].playlists} friends={data[0].friends} />} />
+        //     <Route path="/NewPlaylistPage" element={<NewPlaylistPage/>}/>
+        //   </Routes>
+        // </BrowserRouter>
     );
   }
 }

@@ -7,4 +7,4 @@ import {BrowserRouter} from 'react-router-dom';
 import {App} from './App.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App/>);
+root.render(<h1>Hello World</h1>);
