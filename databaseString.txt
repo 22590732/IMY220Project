@@ -1,0 +1,1 @@
+mongodb+srv://u22590732:<db_password>@imy220-cluster.cqxrm.mongodb.net/?retryWrites=true&w=majority&appName=IMY220-Cluster
