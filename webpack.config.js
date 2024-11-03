@@ -4,7 +4,7 @@ module.exports = {
     entry: "./frontend/src/index.js",
     output: {
         path: path.resolve(__dirname, 'frontend', 'public'),
-        filename:"bundle.js"
+        filename: "bundle.js"
     },
     mode: "development",
     module: {
@@ -15,6 +15,21 @@ module.exports = {
                 use: {
                     loader: "babel-loader"
                 }
+            },
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader', 'postcss-loader']
+            },
+            {
+                test: /\.(png|jpe?g|gif|svg)$/i,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[path][name].[ext]',
+                        },
+                    },
+                ],
             }
         ]
     }
