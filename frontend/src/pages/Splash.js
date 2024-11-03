@@ -12,8 +12,6 @@ class Splash extends React.Component {
             loggedIn: false,
         }
         this.toggleLoggingIn = this.toggleLoggingIn.bind(this);
-
-        // make a ref to user for it's data to be sent to Playlist Page
     }
 
     toggleLoggingIn() {

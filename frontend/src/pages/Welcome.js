@@ -14,8 +14,6 @@ class Welcome extends React.Component {
             loggedIn: false,
         }
         this.toggleLoggingIn = this.toggleLoggingIn.bind(this);
-
-        // make a ref to user for it's data to be sent to Playlist Page
     }
 
     toggleLoggingIn() {
@@ -29,13 +27,6 @@ class Welcome extends React.Component {
 
     render() {
         return (
-            // <div>
-
-            //     <img src={Logo} alt="SonicGlow Logo" />
-            //     <h1 className="font-museo text-2xl text-logoPink">Sonic Glow</h1>
-            //     <h2 className="text-white">Welcome Back</h2>
-            //     <Link to="/Splash" className="text-sonicGreen">sign in</Link>
-            // </div>
 
             <div className="flex items-center justify-center min-h-screen" style={{background: 'radial-gradient(circle, #8B008B 10%, #000000 85%)'}}>
                 <div className="flex flex-row items-center p-6 rounded-lg">

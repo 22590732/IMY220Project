@@ -1,0 +1,107 @@
+[{
+  "_id": {
+    "$oid": "672777e347e586bcd3a012c3"
+  },
+  "playlists": [
+    {
+      "_id": 1,
+      "playlistName": "ChillVibes",
+      "songs": [
+        1,
+        2,
+        3
+      ],
+      "duration": 570
+    },
+    {
+      "_id": 2,
+      "playlistName": "Morning Motivation",
+      "songs": [
+        4,
+        5
+      ],
+      "duration": 410
+    },
+    {
+      "_id": 3,
+      "playlistName": "Evening Relaxation",
+      "songs": [
+        6,
+        7
+      ],
+      "duration": 485
+    },
+    {
+      "_id": 4,
+      "playlistName": "Workout Beats",
+      "songs": [
+        8,
+        9,
+        10
+      ],
+      "duration": 660
+    },
+    {
+      "_id": 5,
+      "playlistName": "Pop Hits",
+      "songs": [
+        1,
+        4,
+        10
+      ],
+      "duration": 750
+    },
+    {
+      "_id": 6,
+      "playlistName": "Indie Favorites",
+      "songs": [
+        2,
+        5,
+        9
+      ],
+      "duration": 555
+    },
+    {
+      "_id": 7,
+      "playlistName": "Party Mix",
+      "songs": [
+        3,
+        6,
+        7,
+        8
+      ],
+      "duration": 580
+    },
+    {
+      "_id": 8,
+      "playlistName": "Classic Rock",
+      "songs": [
+        1,
+        2,
+        5,
+        10
+      ],
+      "duration": 930
+    },
+    {
+      "_id": 9,
+      "playlistName": "Hip Hop Essentials",
+      "songs": [
+        3,
+        6,
+        9
+      ],
+      "duration": 675
+    },
+    {
+      "_id": 10,
+      "playlistName": "Feel Good Tunes",
+      "songs": [
+        1,
+        4,
+        8
+      ],
+      "duration": 705
+    }
+  ]
+}]

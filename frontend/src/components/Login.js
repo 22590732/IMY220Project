@@ -58,13 +58,6 @@ class Login extends React.Component {
     }
 
     render() {
-        // if (this.state.loggedIn) {
-        //     return (
-        //         // <Link to="/Playlist" playlists={this.state.user.playlists} songs={this.state.user.songs} comments={this.state.user.comments} />
-        //         navigate('/Playlist', {state: {user: this.state.user}})
-        //     );
-        // }
-        // else {
         return (
             <div>
                 <form className="login" onSubmit={this.submitLogin}>
@@ -77,7 +70,6 @@ class Login extends React.Component {
                 </form>
             </div>
         );
-        // }
 
     }
 };
